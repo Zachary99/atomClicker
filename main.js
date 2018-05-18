@@ -1,9 +1,9 @@
 //Getting atoms
 
 var Atoms = 1000;
-var Elements = 0;
-var Molecules = 0;
-var Compunds = 0;
+var Elements = 999;
+var Molecules = 999;
+var Compunds = 999;
 
 var AutoClick = Elements + (Molecules * 2) + (Compunds * 3);
 
