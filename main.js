@@ -42,7 +42,7 @@ function buyMolecule() {
 function buyCompund() {
   var CompundCost = Math.floor(1000 * Math.pow(1.75, Compunds)); //works out the cost of this Compund
   if (Atoms >= CompundCost) { //checks that the player can afford the Compund
-    Compund++; //increases number of Compunds
+    Compunds++; //increases number of Compunds
     Atoms -= CompundCost; //removes the Atoms spent
     document.getElementById('Compunds').innerHTML = Compunds; //updates the number of Compunds for the user
     document.getElementById('Atoms').innerHTML = Atoms; //updates the number of Atoms for the user
