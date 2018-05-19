@@ -47,7 +47,7 @@ function buyCompund() {
     document.getElementById('Compunds').innerHTML = Compunds; //updates the number of Compunds for the user
     document.getElementById('Atoms').innerHTML = Atoms; //updates the number of Atoms for the user
   };
-  var nextCCost = Math.floor(1000 * Math.pow(1.75, Compund)); //works out the cost of the next Compund
+  var nextCCost = Math.floor(1000 * Math.pow(1.75, Compunds)); //works out the cost of the next Compund
   document.getElementById('CompundCost').innerHTML = nextCCost; //updates the Compund cost for the user
 };
 
