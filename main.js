@@ -6,7 +6,7 @@ var Molecules = 0;
 var Compunds = 0;
 
 var AutoClick = Elements + (Molecules * 2) + (Compunds * 3);
-
+document.getElementById('AutoClick').innerHTML = AutoClick;
 
 function AtomClick(number) {
   Atoms = Atoms + number;
