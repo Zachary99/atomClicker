@@ -71,7 +71,7 @@ function buyAloy() {
 
 //Matter
 function buyMatter() {
-  var MatterCost = Math.floor(10000 * Math.pow(1.9, Matter)); //works out the cost of the Matter
+  var MatterCost = Math.floor(100000 * Math.pow(1.9, Matter)); //works out the cost of the Matter
   if (Atoms >= MatterCost) { //checks that the player can afford the Matter
     Matter++; //increases amount of Matter
     Atoms -= MatterCost; //removes the Atoms spent
