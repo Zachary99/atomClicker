@@ -18,13 +18,21 @@
 	</head>
 
 	<body>
+		
+		<span id="Clicker">	
+		<br> Atoms Per Second: <span id="AutoClick">0</span>
+		<br>
+		
 		<input type="image" src="http://pngimages.net/sites/default/files/atom-png-image-26627.png" onclick="AtomClick(1)"/>
 		<br> Atoms: <span id="Atoms">1000</span>
 		<br>
+		</span>
 
-		<br> Atoms Per Second: <span id="AutoClick">0</span>
-		<br>
-
+		
+		<span id="Upgrades">
+		</span>
+		
+		<span id="Upgrades">
 		<button onclick="buyElement()">Buy Element</button>
 		<br> Elements: <span id="Elements">0</span>
 		<br> Element Cost: <span id="ElementCost">10</span>
@@ -40,6 +48,17 @@
 		<br> Compund Cost: <span id="CompundCost">1000</span>
 		<br>
 
+		<button onclick="buyAloy()">Buy Aloy</button>
+		<br>  <span id="Aloys">0</span>
+		<br> Aloy Cost: <span id="AloyCost">10000</span>
+		<br>
+			
+		<button onclick="buyMatter()">Buy Matter</button>
+		<br>  <span id="Matter">0</span>
+		<br> MatterCost: <span id="MatterCost">100000</span>
+		<br>
+		</span>
+		
 		<script type="text/javascript" src="main.js"></script>
 
 	</body>
