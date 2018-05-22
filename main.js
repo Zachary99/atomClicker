@@ -8,7 +8,7 @@ var Aloys =  0;
 var matter = 0;
 
 // clicking to get atoms
-var AutoClick = Elements + (Molecules * 2) + (Compunds * 3);
+var AutoClick = Elements + (Molecules * 2) + (Compunds * 3) + (Aloys * 4) + (Matter * 5);
 document.getElementById('AutoClick').innerHTML = AutoClick;
 
 function AtomClick(number) {
@@ -71,7 +71,7 @@ function buyAloy() {
 
 //Matter
 function buyMatter() {
-  var MatterCost = Math.floor(10000 * Math.pow(1.85, Aloys)); //works out the cost of the Matter
+  var MatterCost = Math.floor(10000 * Math.pow(1.9, Matter)); //works out the cost of the Matter
   if (Atoms >= MatterCost) { //checks that the player can afford the Matter
     Matter++; //increases amount of Matter
     Atoms -= MatterCost; //removes the Atoms spent
