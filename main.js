@@ -86,6 +86,6 @@ function buyMatter() {
 //Auto click
 window.setInterval(function() {
 
-  AtomClick(Elements + (Molecules * 2)+(Compunds * 3));
+  AtomClick(Elements + (Molecules * 2) + (Compunds * 3) + (Aloys * 4) + (Matter * 5));
 
 }, 1000);
