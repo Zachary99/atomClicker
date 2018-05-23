@@ -6,9 +6,11 @@ var Molecules = 0;
 var Compunds = 0;
 var Aloys =  0;
 var matter = 0;
+var DarkMatter = 0;
+var Scientists = 0;
 
 // clicking to get atoms
-var AutoClick = Elements + (Molecules * 2) + (Compunds * 3) + (Aloys * 4) + (Matter * 5);
+var AutoClickTotal = Elements + (Molecules * 2) + (Compunds * 3) + (Aloys * 4) + (Matter * 5);
 document.getElementById('AutoClick').innerHTML = AutoClick;
 
 function AtomClick(number) {
@@ -65,7 +67,7 @@ function buyAloy() {
     document.getElementById('Aloys').innerHTML = Aloys; //updates the number of Aloys for the user
     document.getElementById('Atoms').innerHTML = Atoms; //updates the number of Atoms for the user
   };
-  var nextACost = Math.floor(1000 * Math.pow(1.85, Aloys)); //works out the cost of the next Aloy
+  var nextACost = Math.floor(10000 * Math.pow(1.85, Aloys)); //works out the cost of the next Aloy
   document.getElementById('AloyCost').innerHTML = nextACost; //updates the Aloy cost for the user
 };
 
@@ -78,14 +80,45 @@ function buyMatter() {
     document.getElementById('Matter').innerHTML = Matter; //updates the amount of Matter for the user
     document.getElementById('Atoms').innerHTML = Atoms; //updates the number of Atoms for the user
   };
-  var nextMaCost = Math.floor(1000 * Math.pow(1.9, Matter)); //works out the cost of the next Matter
+  var nextMaCost = Math.floor(100000 * Math.pow(1.9, Matter)); //works out the cost of the next Matter
   document.getElementById('MatterCost').innerHTML = nextMaCost; //updates the Matter cost for the user
 };
 
-//Next Upgrade Dark Matter (DarkMatter or DMatter)
+//Dark Matter
+function buyDarkMatter() {
+  var DarkMatterCost = Math.floor(1000000 * Math.pow(1.95, DarkMatter)); //works out the cost of the Dark Matter
+  if (Atoms >= DarkMatterCost) { //checks that the player can afford the Dark Matter
+    DarkMatter++; //increases amount of Dark Matter
+    Atoms -= DarkMatterCost; //removes the Atoms spent
+    document.getElementById('DarkMatter').innerHTML = DarkMatter; //updates the amount of Dark Matter for the user
+    document.getElementById('Atoms').innerHTML = Atoms; //updates the number of Atoms for the user
+  };
+  var nextDMCost = Math.floor(1000000 * Math.pow(1.95, DarkMatter)); //works out the cost of the next Dark Matter
+  document.getElementById('DarkMatterCost').innerHTML = nextDMCost; //updates the Dark Matter cost for the user
+};
+
+//Scietnists
+function HireScientist() {
+  var ScientistCost = Math.floor(10000000 * Math.pow(1, Scientists)); //works out the cost of the Scletnist
+  if (Atoms >= DarkMatterCost) { //checks that the player can afford the Scientists
+    DarkMatter++; //increases amount of Scientists
+    Atoms -= ScientistCost; //removes the Atoms spent
+    document.getElementById('Scientists').innerHTML = Scletnists; //updates the amount of Scletnists for the user
+    document.getElementById('Atoms').innerHTML = Atoms; //updates the number of Atoms for the user
+  };
+
+function FireScientist() {
+  Scientists --;
+};
 //Auto click
 window.setInterval(function() {
 
-  AtomClick(Elements + (Molecules * 2) + (Compunds * 3) + (Aloys * 4) + (Matter * 5));
-
+  AtomClick(Elements + (Molecules * 2) + (Compunds * 3) + (Aloys * 4) + (Matter * 5) + (DarkMatter * 6) + (scientists * 4));
+  Atoms = Atoms - (scientists * 200);
+  if (scientists >= 1) {
+   if (atoms <= 0) {
+     FireScietnist()
+     Atoms = 0
+   }
+  }
 }, 1000);
