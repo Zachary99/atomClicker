@@ -108,8 +108,10 @@ function HireScientist() {
   };
 
 function FireScientist() {
+ if (scientists >= 1){
   Scientists --;
-};
+ };
+};  
 //Auto click
 window.setInterval(function() {
 
@@ -119,6 +121,6 @@ window.setInterval(function() {
    if (atoms <= 0) {
      FireScietnist()
      Atoms = 0
-   }
-  }
+   };
+  };
 }, 1000);
