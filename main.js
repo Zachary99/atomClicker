@@ -1,6 +1,6 @@
 //Initalising variables
 
-var Atoms = 9999999;
+var Atoms = 99999999999999999999;
 var Elements = 0;
 var Molecules = 0;
 var Compunds = 0;
