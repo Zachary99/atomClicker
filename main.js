@@ -7,7 +7,7 @@ var Compunds = 0;
 var Aloys =  0;
 var matter = 0;
 var DarkMatter = 0;
-var Scientists = 0;
+
 
 // clicking to get atoms
 var AutoClickTotal = Elements + (Molecules * 2) + (Compunds * 3) + (Aloys * 4) + (Matter * 5);
@@ -97,21 +97,6 @@ function buyDarkMatter() {
   document.getElementById('DarkMatterCost').innerHTML = nextDMCost; //updates the Dark Matter cost for the user
 };
 
-//Scietnists
-function HireScientist() {
-  var ScientistCost = Math.floor(10000000 * Math.pow(1, Scientists)); //works out the cost of the Scletnist
-  if (Atoms >= DarkMatterCost) { //checks that the player can afford the Scientists
-    DarkMatter++; //increases amount of Scientists
-    Atoms -= ScientistCost; //removes the Atoms spent
-    document.getElementById('Scientists').innerHTML = Scletnists; //updates the amount of Scletnists for the user
-    document.getElementById('Atoms').innerHTML = Atoms; //updates the number of Atoms for the user
-  };
-
-function FireScientist() {
- if (scientists >= 1){
-  Scientists --;
- };
-};  
 //Auto click
 window.setInterval(function() {
 
