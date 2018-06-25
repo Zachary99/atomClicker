@@ -5,7 +5,7 @@ var Elements = 0;
 var Molecules = 0;
 var Compunds = 0;
 var Aloys =  0;
-var matter = 0;
+var Matter = 0;
 var DarkMatter = 0;
 
 
