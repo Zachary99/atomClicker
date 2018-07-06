@@ -1,0 +1,173 @@
+.atom-image {
+  width: 75%;
+}
+
+#clicker,
+#upgrades,
+#modifiers {
+  overflow: auto;
+  width: 400px;
+  height: 500px;
+  background-color: #09a1a8;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000;
+  text-align: center;
+  margin: 4px;
+  float: left;
+  margin-top: 8px;
+}
+
+.content {
+    width: 100000px;
+    height: 501px;
+}
+
+#upgrades button {
+  width: 100px;
+  height: 20px;
+  margin: auto;
+}
+
+#upgrades text {
+  margin: auto;
+}
+
+#modifiers button {
+  width: 100px;
+  height: 20px;
+  margin: auto;
+  margin-top: 10px
+}
+
+body {
+  background-color: #1e1e1e;
+}
+
+div.inline {
+  float: left;
+}
+
+header nav .main-wrapper {
+  background-color: #09a1a8;
+  width: 1216px;
+  height: 40px;
+}
+
+header nav form {
+  float: right;
+  margin-right: 10px;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+.nav-buttons {
+    width: 70px;
+    height: 40px;
+    float: left;
+    border-color: #ff9900;
+    border-style: ridge;
+    border-width: 3px;
+    background-color: #09a1a8;
+}
+
+.nav-buttons:hover {
+    float: left;
+    border-style: groove;
+    background-color: #088a91;
+    cursor: pointer;
+    height: 40px;
+}
+
+body div.content {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+}
+
+#BuyModifier {
+    border-color: #ff9900;
+    border-style: ridge;
+    border-width: 3px;
+    background-color: #09a1a8;
+}
+
+#BuyModifier:hover {
+    border-style: groove;
+    background-color: #088a91;
+    cursor: pointer;
+}
+
+.save-load {
+    width: 70px;
+    height: 40px;
+    float: right;
+    border-color: #ff9900;
+    border-style: ridge;
+    border-width: 3px;
+    background-color: #09a1a8;
+}
+
+.save-load:hover {
+    border-style: groove;
+    background-color: #088a91;
+    cursor: pointer;
+    height: 40px;
+}
+
+header nav form .login-logout {
+    width: 70px;
+    height: 40px;
+    border-color: #ff9900;
+    border-style: ridge;
+    border-width: 3px;
+    background-color: #09a1a8;
+}
+
+header nav form .login-logout:hover {
+    border-style: groove;
+    background-color: #088a91;
+    cursor: pointer;
+    height: 40px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #09a1a8; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff9900;
+    height: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e6a800; 
+}
+
+/* div.footer {
+    width: 1216px;
+    height: 40px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #09a1a8;
+    text-align: center; */
+}
+
+footer div.main-wrapper {
+  background-color: #09a1a8;
+  width: 1216px;
+  height: 40px;
+}
+
+section.main-container {
+    
+}
